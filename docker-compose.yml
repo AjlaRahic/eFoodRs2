@@ -1,0 +1,79 @@
+version: '3'
+services:
+  # RabbitMQ Docker
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_DEFAULT_USER=test
+      - RABBITMQ_DEFAULT_PASS=test
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - efoodnet
+ 
+#mssql docker
+  efood-sql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Lozinka123
+      - MSSQL_PID=Developer
+    ports:
+      - 1433:1433
+    expose:
+      - 1433
+    networks:
+      - efoodnet
+ 
+  efood-api:
+    restart: unless-stopped
+    build:
+      context: .
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=efood-sql,1433;Database=RSHrana;User Id=sa;Password=Lozinka123;ConnectRetryCount=0;TrustServerCertificate=True
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=test
+      - RABBITMQ_PASSWORD=test
+      - SMTP_SERVER=smtp.outlook.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=test12testovic@gmail.com
+      - SMTP_PASSWORD=testovic12$TE
+    ports:
+      - 7072:7072
+    networks:
+      - efoodnet
+    links:
+      - efood-sql
+    depends_on:
+      - efood-sql
+      - rabbitmq
+ 
+        # RabbitMQ Service Docker
+  rabbitmq-service:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./efood.Subscriber/Dockerfile
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=test
+      - RABBITMQ_PASSWORD=test
+      - SMTP_SERVER=smtp.outlook.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=test12testovic@gmail.com
+      - SMTP_PASSWORD=testovic12$TE
+    depends_on:
+      - rabbitmq
+    networks:
+      - efoodnet
+     
+networks:
+  efoodnet:
+    driver: bridge    
