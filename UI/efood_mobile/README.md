@@ -15,10 +15,17 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+testni podaci mobile login:
+username: mobile
+pass: test
 
+tetni podaci za dostavljaca:
+username: dostavljac
+pass: test
+
+paypal:
 email: sb-fxtt348348432@personal.example.com
 pass: 1GA@i0#l
-
 
 test12testovic@gmail.com
 testovic12$TE
