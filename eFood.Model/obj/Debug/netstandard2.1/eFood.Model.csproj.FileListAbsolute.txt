@@ -20,3 +20,14 @@ C:\Users\HOME\Desktop\rs\pokusaj\Razvoj-softvera-2--seminarski-rad-main\eFood.Mo
 C:\Users\HOME\Desktop\rs\pokusaj\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.sourcelink.json
 C:\Users\HOME\Desktop\rs\pokusaj\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.dll
 C:\Users\HOME\Desktop\rs\pokusaj\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.pdb
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\bin\Debug\netstandard2.1\eFood.Model.deps.json
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\bin\Debug\netstandard2.1\eFood.Model.dll
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\bin\Debug\netstandard2.1\eFood.Model.pdb
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.csproj.AssemblyReference.cache
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.AssemblyInfoInputs.cache
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.AssemblyInfo.cs
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.csproj.CoreCompileInputs.cache
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.sourcelink.json
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.dll
+C:\Users\HOME\Desktop\Razvoj-softvera-2--seminarski-rad-main\eFood.Model\obj\Debug\netstandard2.1\eFood.Model.pdb

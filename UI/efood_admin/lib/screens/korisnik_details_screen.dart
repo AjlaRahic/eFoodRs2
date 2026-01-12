@@ -94,28 +94,36 @@ class _KorisniciDetailsScreenState extends State<KorisniciDetailsScreen> {
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return MasterScreenWidget(
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: SingleChildScrollView(
-          child: FormBuilder(
-            key: _formKey,
-            initialValue: _initialValue,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  widget.korisnik != null
-                      ? 'Uredi profil korisnika'
-                      : 'Dodaj novi korisnik',
-                  style: TextStyle(
-                    color: Colors.purple[700],
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+ Widget build(BuildContext context) {
+  return MasterScreenWidget(
+    child: Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: SingleChildScrollView(
+        child: FormBuilder(
+          key: _formKey,
+          initialValue: _initialValue,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.arrow_back, color: Colors.purple[700]),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
                   ),
-                ),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Uredi profil korisnika',
+                    style: TextStyle(
+                      color: Colors.purple[700],
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
                 SizedBox(height: 24),
                 _buildFormField("Ime korisnika", "ime", Icons.person),
                 SizedBox(height: 16),

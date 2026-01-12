@@ -236,49 +236,7 @@ void _showSuccessDialog(BuildContext context, String message) {
   }
   return null;
 },
-/*
-                ),
-              ),
-            
-          ),
-          const SizedBox(height: 10,),
-          Padding(padding: const EdgeInsets.only(left: 10),
-        child:SizedBox(
-              width: 550,
-                child: FormBuilderDropdown<String>(
-                  name: 'drzavaId',
-                  decoration: InputDecoration(
-                    labelText: 'Država',
-                    labelStyle: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-                    errorText: _formKey.currentState?.fields['drzavaId']?.errorText,
-                    border: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(7.0),
-  ),
-  filled: true,
-  fillColor: Colors.grey[200],
-                    suffix: IconButton(
-                      icon: const Icon(Icons.close),
-                      onPressed: () {
-                        _formKey.currentState!.fields['drzavaId']?.reset();
-                      },
-                    ),
-                    hintText: 'Select Država',
-                  ),
-                  /*items: drzavaResult?.result
-                          .map((item) => DropdownMenuItem(
-                                alignment: AlignmentDirectional.center,
-                                value: item.id!.toString(),
-                                child: Text(item.naziv ?? ""),
-                              ))
-                          .toList() ??
-                      [],*/
-                  validator: (value) {
-  if (value == null || value.isEmpty) {
-    return "Polje je obavezno.";
-  }
-  return null;
-},
-*/
+
                 ),
               ),
               

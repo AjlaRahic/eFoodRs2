@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9G82+r/+lIo=",
+  "dgSpecHash": "+lyPnlkRDak=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HOME\\Desktop\\rs\\pokusaj\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Subscriber\\eFood.Subscriber.csproj",
+  "projectFilePath": "C:\\Users\\HOME\\Desktop\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Subscriber\\eFood.Subscriber.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HOME\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

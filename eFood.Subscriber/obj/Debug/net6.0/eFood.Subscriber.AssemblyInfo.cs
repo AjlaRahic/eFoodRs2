@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eFood.Subscriber")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65d83ca1805d5b5f355a44e82f42327d61199871")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29031bcda8b4ee9d9de8c2565f454ddcfa9f35dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("eFood.Subscriber")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eFood.Subscriber")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H6xzwi0I+U8=",
+  "dgSpecHash": "+20fwmD7pfE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HOME\\Desktop\\rs\\pokusaj\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Services\\eFood.Services.csproj",
+  "projectFilePath": "C:\\Users\\HOME\\Desktop\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Services\\eFood.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HOME\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -159,9 +159,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'iTextSharp 5.5.13.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\HOME\\Desktop\\rs\\pokusaj\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Services\\eFood.Services.csproj",
+      "projectPath": "C:\\Users\\HOME\\Desktop\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Services\\eFood.Services.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\HOME\\Desktop\\rs\\pokusaj\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Services\\eFood.Services.csproj",
+      "filePath": "C:\\Users\\HOME\\Desktop\\Razvoj-softvera-2--seminarski-rad-main\\eFood.Services\\eFood.Services.csproj",
       "libraryId": "iTextSharp",
       "targetGraphs": [
         "net6.0"

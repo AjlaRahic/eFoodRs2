@@ -2,6 +2,7 @@ import 'package:efood_admin/main.dart';
 import 'package:efood_admin/screens/dojmovi_list_screen.dart';
 import 'package:efood_admin/screens/evidencija_obavjestenja.dart';
 import 'package:efood_admin/screens/home_screen.dart';
+import 'package:efood_admin/screens/izvjestaji_screen.dart';
 import 'package:efood_admin/screens/korisnik_profile_screen.dart';
 import 'package:efood_admin/screens/meni_screen.dart';
 import 'package:efood_admin/screens/status_narudzba_screen.dart';
@@ -23,7 +24,7 @@ class MasterScreenWidget extends StatefulWidget {
 class _MasterScreenWidgetState extends State<MasterScreenWidget> {
   late String _activeItem;
 
-  final Color appBarColor = const Color(0xFF9C27B0); // tamna ljubičasta
+  final Color appBarColor = const Color(0xFF9C27B0); 
   final Color activeUnderlineColor = Colors.white;
   final Color contentBackgroundColor = const Color(0xFFF3E5F5);
 
@@ -44,22 +45,23 @@ class _MasterScreenWidgetState extends State<MasterScreenWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: contentBackgroundColor,
+      backgroundColor:  Color(0xFFF3E5F5),
       appBar: AppBar(
-        backgroundColor: appBarColor,
+        backgroundColor:  Color(0xFF9C27B0),
         elevation: 0,
         titleSpacing: 0,
         automaticallyImplyLeading: false,
         title: Row(
           children: [
-            _buildNavbarItem("Početna", HomeScreen(), Icons.home),
-            _buildNavbarItem("Meni", MeniScreen(), Icons.restaurant_menu),
+            _buildNavbarItem("Početna", HomeScreen(), Icons.home_filled),
+            _buildNavbarItem("Meni", MeniScreen(), Icons.menu_book),
             _buildNavbarItem(
-                "Narudžbe", StatusNarudzbaScreen(), Icons.assignment),
+                "Narudžbe", StatusNarudzbaScreen(), Icons.receipt),
             _buildNavbarItem(
-                "Obavještenja", EvidencijaObavjestenja(), Icons.notifications),
-            _buildNavbarItem("Dojmovi", DojmoiListScreen(), Icons.comment),
-            _buildNavbarItem("Administrator", KorisnikScreen(), Icons.people),
+                "Obavještenja", EvidencijaObavjestenja(), Icons.notifications_active),
+            _buildNavbarItem("Dojmovi", DojmoiListScreen(), Icons.rate_review),
+            _buildNavbarItem("Izvjestaji", IzvjestajiScreen(), Icons.report),
+            _buildNavbarItem("Administrator", KorisnikScreen(), Icons.admin_panel_settings),
             const Spacer(),
             _buildNavbarLogout(),
           ],

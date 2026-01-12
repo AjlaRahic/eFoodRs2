@@ -104,7 +104,7 @@ class _MeniScreenState extends State<MeniScreen> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            // ----- FILTER KARTICA -----
+            
             Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -115,7 +115,7 @@ class _MeniScreenState extends State<MeniScreen> {
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: [
-                    // TEXTFIELD PRETRAGA
+                    
                     TextField(
                       controller: _nazivController,
                       decoration: const InputDecoration(
@@ -126,7 +126,7 @@ class _MeniScreenState extends State<MeniScreen> {
                     ),
                     const SizedBox(height: 12),
 
-                    // DROPDOWN KATEGORIJA
+                    
                     DropdownButtonFormField<int>(
                       value: _selectedKategorijaId,
                       hint: const Text("Odaberi kategoriju"),
@@ -148,7 +148,7 @@ class _MeniScreenState extends State<MeniScreen> {
                     ),
                     const SizedBox(height: 12),
 
-                    // DUGMAD
+                  
                     Row(
                       children: [
                         Expanded(
@@ -193,7 +193,7 @@ class _MeniScreenState extends State<MeniScreen> {
 
             const SizedBox(height: 16),
 
-            // ----- SCROLLABLE GRID SA VIZUALNIM OKVIROM -----
+           
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
@@ -371,7 +371,7 @@ class _MeniScreenState extends State<MeniScreen> {
 
             const SizedBox(height: 16),
 
-            // ----- DUGME DODAJ JELO -----
+           
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

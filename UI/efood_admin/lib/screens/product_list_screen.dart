@@ -213,7 +213,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
-                      color: Colors.purple, // ljubičasto
+                      color: Colors.purple, 
                     ),
                   ),
                   const SizedBox(height: 4),

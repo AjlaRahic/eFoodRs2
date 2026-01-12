@@ -33,8 +33,12 @@ class _UplatePoKorisnikuReportState extends State<UplatePoKorisnikuReport> {
     final ttf = pw.Font.ttf(fontData);
 
     pdf.addPage(
-      pw.Page(
-        pageFormat: PdfPageFormat.a4,
+    pw.Page(
+    pageFormat: PdfPageFormat.a4,
+    theme: pw.ThemeData.withFont(
+      base: ttf,
+      bold: ttf,
+    ),
         build: (context) {
           return pw.Column(
             crossAxisAlignment: pw.CrossAxisAlignment.start,
@@ -118,15 +122,18 @@ class _UplatePoKorisnikuReportState extends State<UplatePoKorisnikuReport> {
                   child: ElevatedButton.icon(
                     onPressed: () => _generatePdf(uplate),
                     icon: const Icon(Icons.download),
-                    label: const Text("Preuzmi PDF izveštaj"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orange,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 12),
-                      textStyle: const TextStyle(fontSize: 16),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                    label: const Text(
+                        "Preuzmi PDF izveštaj",
+                        style: TextStyle(color: Colors.white),
                       ),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF8E44AD), 
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 12),
+                        textStyle: const TextStyle(fontSize: 16),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                     ),
                   ),
                 ),

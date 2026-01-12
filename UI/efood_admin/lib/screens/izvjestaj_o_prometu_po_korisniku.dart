@@ -43,7 +43,7 @@ class _PrometPoKorisnikuReportState extends State<PrometPoKorisnikuReport> {
               ...promet.map((item) {
                 return pw.Text(
                   'Korisnik: ${item.imeKorisnika ?? "Nepoznato"}\n'
-                  'Datum narudzbe: ${item.datumNarudzbe ?? "Nepoznato"}\n'
+                  'Datum narudžbe: ${item.datumNarudzbe ?? "Nepoznato"}\n'
                   'Kategorija: ${item.nazivKategorije ?? "Nepoznato"}\n'
                   '---------------------------------------------------',
                   style:  pw.TextStyle(

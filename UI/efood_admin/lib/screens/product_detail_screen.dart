@@ -87,9 +87,15 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text(screenTitle, overflow: TextOverflow.ellipsis),
+          title: Text(  screenTitle,
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(
+          color: Colors.white, 
+          fontWeight: FontWeight.w600,),),
           backgroundColor: Colors.purple[700],
-          leading: BackButton(onPressed: () async {
+          leading: BackButton(color: Colors.white,
+          onPressed: () async {
+            
             final canLeave = await _confirmDiscardIfNeeded();
             if (canLeave) Navigator.of(context).pop(false);
           }),
@@ -125,10 +131,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.purple[700],
+                            foregroundColor: Colors.white,
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 32, vertical: 12),
                             textStyle: const TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold),
+                                fontSize: 16, fontWeight: FontWeight.bold,),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12)),
                           ),
@@ -158,7 +165,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            // Naziv
+           
             FormBuilderTextField(
               name: "naziv",
               decoration: InputDecoration(
@@ -177,7 +184,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               },
             ),
             const SizedBox(height: 16),
-            // Opis
+           
             FormBuilderTextField(
               name: "opis",
               maxLines: 2,
@@ -191,7 +198,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               ),
             ),
             const SizedBox(height: 16),
-            // Cijena i Kategorija
+            
             Row(
               children: [
                 Expanded(
@@ -209,7 +216,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         borderRadius: BorderRadius.circular(12),
                         borderSide: BorderSide(color: Colors.purple[700]!, width: 1.5),
                       ),
-                      prefixIcon: Icon(Icons.category, color: Colors.purple[400]),
+                      
                     ),
                     items: _kategorijaResult?.result
                             .map((item) => DropdownMenuItem<String>(
@@ -236,14 +243,14 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         borderRadius: BorderRadius.circular(12),
                         borderSide: BorderSide(color: Colors.purple[700]!),
                       ),
-                      prefixIcon: Icon(Icons.euro, color: Colors.purple[400]),
+                      
                     ),
                   ),
                 ),
               ],
             ),
             const SizedBox(height: 26),
-            // Image picker
+            
             FormBuilderField<String?>(
               name: 'imageId',
               builder: (field) {

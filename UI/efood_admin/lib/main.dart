@@ -155,7 +155,7 @@ class _LoginPageState extends State<LoginPage> {
                   CircleAvatar(
                    radius: 50,
                    backgroundColor: Colors.purple[100],
-                   backgroundImage: AssetImage("assets/images/slika1.jpg"),
+                   backgroundImage: AssetImage("assets/images/logo.jpg"),
                   ),
                   const SizedBox(height: 16),
                   Text(

@@ -96,7 +96,6 @@ class DashboardScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            /// --- CENTRALNI SADRŽAJ ---
             Expanded(
               flex: 1,
               child: Center(
@@ -116,7 +115,7 @@ class DashboardScreen extends StatelessWidget {
     );
   }
 
-  /// Navigacije (prazne kao i prije)
+
   void _navigateToEmployees(BuildContext context) {}
   void _navigateToMenu(BuildContext context) {}
   void _navigateToOrders(BuildContext context) {}
@@ -128,7 +127,6 @@ class DashboardScreen extends StatelessWidget {
 }
 
 
-/// --- KARTICA ZA DASHBOARD ---
 class DashboardCard extends StatelessWidget {
   final String title;
   final IconData icon;
